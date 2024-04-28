@@ -1,0 +1,289 @@
+/* Primary colors */
+:root {
+    --bg-light: #f2f2f2;
+    --bg-dark: #333;
+    --primary-color: #ff4000;
+    --secondary-color: #ff6600;
+    --accent-color: #ff3300;
+    --text-dark: #444;
+    --text-light: #555;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    background-image: url('/assets/images/Banner/Banner1.jpg');
+    transition: background-image 2.5s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: var(--bg-light);
+    padding: 50px 0;
+    height: 75vh;
+    overflow: hidden;
+}
+
+/* #bannerVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+} */
+
+.banner-content {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 70px;
+}
+
+.banner form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.banner input[type="text"] {
+    padding: 7px;
+    margin-top: none;
+    margin-bottom: 30px;
+    width: 40%;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+}
+
+.banner button i {
+    font-size: 26px;
+    align-items: center;
+}
+
+.banner button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--accent-color);
+    border: none;
+    margin-left: -45px;
+    margin-top: -30px;
+    cursor: pointer;
+}
+.banner button:hover{
+    transform: scale(1.2,1.2);
+    transition: .2s;
+}
+
+.banner a {
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 80px;
+    cursor: pointer;
+}
+
+.banner a:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 7px var(--secondary-color);
+    transition: .2s;
+}
+
+/* Featured Cars styles */
+.featured-cars {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding: 50px 0;
+}
+
+.featured-cars h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car-listings a{
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: none;
+    color: var(--text-dark);
+    background-color: none;
+}
+
+.car-listing a {
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: none;
+    background-color: none;
+}
+
+.car-listing {
+    background-color: #e9e9e9;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 30%;
+}
+
+.car-listing:hover {
+    transform: scale(1.1,1.1);
+    transition: .2s;
+}
+
+
+.car-listing a img {
+    width: 90%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* .car-listing a img:hover {
+    transform: scale(1.1,1.1);
+    transition: .2s;
+} */
+
+.car-listing h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.car-listing p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.car-listing a button {
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 60px;
+}
+
+.car-listing a button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+    transition: .2s;
+}
+
+/* Testimonials styles */
+.testimonials {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding: 50px 0;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial {
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 45%;
+}
+
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.customer-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.customer-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+}
+
+/* Back-to-top button styles */
+#back-to-top {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 40px;
+    bottom: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: var(--bg-light);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#back-to-top:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+    transition: .2s;
+}

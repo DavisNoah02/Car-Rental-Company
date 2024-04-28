@@ -1,0 +1,87 @@
+/* Primary colors */
+:root {
+    --bg-light: #f2f2f2;
+    --bg-dark: #333;
+    --primary-color: #ff4000;
+    --secondary-color: #ff6600;
+    --accent-color: #ff3300;
+    --text-dark: #444;
+    --text-light: #555;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Section styles */
+.car-booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    height: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--bg-light);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-booking h2 {
+    color: var(--text-dark);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.car-booking p {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+/* Form styles */
+form {
+    display: grid;
+    gap: 30px;
+    width: 400px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+select, input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+#book_btn {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#book_btn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 5px var(--secondary-color);
+    transition: .2s;
+}
