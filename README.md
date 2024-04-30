@@ -25,6 +25,7 @@ The "scripts" directory holds PHP scripts that perform specific tasks or process
 
 1.Set Up Web Server: XAMPP or WAMPP
 - Install and configure a web server like Apache or Nginx on your hosting environment. Ensure that PHP support is enabled.
+  
 2.Configure Database: 
 + Set up a database server such as PhpMyAdmin or MySQL. Create a new database for the car rental application and execute the SQL scripts in the database directory to set up the schema and initial data.
 + for example:
